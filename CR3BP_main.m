@@ -22,8 +22,6 @@ y0 = 0;
 % V2 = (x0^2+y0^2) + 2*( (1-mu)/r1 + mu/r2 ) - CJ;
 Y0 = [x0,y0,0,0,0,0];
 
-'oooooooohhhh changes????'
-
 % [t_s, F_s] = ode113(@(t, F)cr3bp_eom(t, F, mu), t_span, );
 
 
