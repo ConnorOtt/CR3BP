@@ -1,4 +1,5 @@
 %Solves the 5th order polynomial to find the lagrangian points
+%Uses set of eqns on pg 972 of Vallado
 
 function [L1x,L2x,L3x] = findLagrangianPoints2(mu)
 

@@ -1,4 +1,5 @@
 %Solves the 5th order polynomial to find the lagrangian points
+%Uses equations on http://www.geom.uiuc.edu/~megraw/MATH1/lib.html
 
 function [L1x,L2x,L3x] = findLagrangianPoints3(mu)
 
