@@ -32,9 +32,9 @@ z_dot = v_vec(3);
 
 % Other values ;)
 r1 = sqrt((x + mu)^2 + y^2 + z^2);
-r2 = sqrt(x^2 + (y + (1-mu))^2 + z^2); % This might be incorrect
+r2 = sqrt((x-1+mu)^2 + y^2 + z^2); % This might be incorrect
 
-x_ddot = 2*y_dot + x - (1-mu)*(x+mu)*r1^3 - mu*(x-1+mu)/r2^3;
+x_ddot = 2*y_dot + x - (1-mu)*(x+mu)/r1^3 - mu*(x-1+mu)/r2^3;
 y_ddot = -2*x_dot + y - (1-mu)*y/r1^3 - mu*y/r2^3;
 z_ddot = -(1-mu)*z/r1^3 - mu*z/r2^3; % Pretty sure this is also wrong
 
