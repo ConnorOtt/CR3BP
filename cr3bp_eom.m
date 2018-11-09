@@ -1,4 +1,4 @@
-function dfdt = cr3bp_eom(F, mu)
+function dfdt = cr3bp_eom(t, F, mu)
 % -------------------------------------------------------------------------
 % Define EOM for 3 body problem
 %
