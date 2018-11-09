@@ -12,7 +12,7 @@ L2x = fsolve(f2,1.24);
 L3x = fsolve(f3,-1.1);
 
 fprintf('At L1, the computed value is %f\n',f1(L1x))
-fprintf('At L2, the computed value is %f\n',f1(L2x))
-fprintf('At L3, the computed value is %f\n',f1(L3x))
+fprintf('At L2, the computed value is %f\n',f2(L2x))
+fprintf('At L3, the computed value is %f\n',f3(L3x))
 
 end
