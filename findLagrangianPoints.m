@@ -10,4 +10,8 @@ L1x = fsolve(f,-mu+0.5);
 L2x = fsolve(f,1);
 L3x = fsolve(f,-mu-1);
 
+fprintf('At L1, the computed value is %f\n',f(L1x))
+fprintf('At L2, the computed value is %f\n',f(L2x))
+fprintf('At L3, the computed value is %f\n',f(L3x))
+
 end
