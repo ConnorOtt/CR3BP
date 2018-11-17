@@ -35,16 +35,24 @@ TG = 6;
 %Run grid shooting
 tol = 0.0001;
 minDist = 100;
-du = abs(u0)/100;
-dv = abs(v0)/100;
+du = abs(u0)/10;
+dv = abs(v0)/10;
 count=0;
 while (minDist>tol && du>0 && dv>0)
     %Do a grid shoot
     [IC, minDist, T] = gridShoot(mu,IG,TG,du,dv);
     
     %Update values to do the grid shoot again
-    du = abs(IG(4)-IC(4))/10;
-    dv = abs(IG(5)-IC(5))/10;
+    if (abs(IG(4)-IC(4)) == 0)
+        du = du/10;
+    else
+        du = abs(IG(4)-IC(4))/10;
+    end
+    if (abs(IG(5)-IC(5)) == 0)
+        dv = dv/10;
+    else
+        dv = abs(IG(5)-IC(5))/10;
+    end
     IG = IC;
     TG = T;
     count = count+1;

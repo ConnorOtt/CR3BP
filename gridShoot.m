@@ -47,7 +47,7 @@ for i=1:N
             dF(k) = norm(F_s(k,:)-IS);
         end
         [distances(i,j),ind] = min(dF(floor(length(dF)*3/4):end));
-        ind = ind+floor(length(dF)*3/4);
+        ind = ind+floor(length(dF)*3/4)-1;
         Ts(i,j) = t_s(ind);
         
 %         % Call these to plot the trajectory with L4
