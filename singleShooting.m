@@ -45,7 +45,7 @@ while (norm(guessDifference)>tol && count<15)
     yVelInds = sort(yVelInds);
     %When the x and y differences have both changed twice, it should be
     %approximately aligned with the initial velocity vector
-    ind = max([xVelInds(2),yVelInds(2)]) +1; %-1 to account for length diffs
+    ind = max([xVelInds(2),yVelInds(2)]); %-1 to account for length diffs
     %Use this index to figure out which nearby F_s vector is closest to the
     %initial vector
     nNear = 3;
